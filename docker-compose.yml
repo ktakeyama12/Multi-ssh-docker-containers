@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web1:
+    build:
+      context: .
+      dockerfile: ./web1/Dockerfile
+    container_name: abc.net
+    ports:
+      - "24:24"
+  web2:
+    build:
+      context: .
+      dockerfile: ./web2/Dockerfile
+    container_name: zxc.com
+    ports:
+      - "23:23"
